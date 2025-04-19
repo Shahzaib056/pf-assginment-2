@@ -10,7 +10,7 @@ void updateStats();
 void deletePlayer();
 
 int main() {
-    int choice;
+    int choie;
     do {
         cout << "\n------ PSL MANAGEMENT SYSTEM ------\n";
         cout << "1. Add Player\n";
@@ -20,16 +20,16 @@ int main() {
         cout << "5. Delete Player Record\n";
         cout << "6. Exit\n";
         cout << "Enter your choice: ";
-        cin >> choice;
+        cin >> choie;
 
         if (choice == 1) addPlayer();
-        else if (choice == 2) viewAllPlayers();
-        else if (choice == 3) searchPlayer();
-        else if (choice == 4) updateStats();
-        else if (choice == 5) deletePlayer();
-        else if (choice != 6) cout << "Invalid option!\n";
+        else if (choie == 2) viewAllPlayers();
+        else if (choie == 3) searchPlayer();
+        else if (choie == 4) updateStats();
+        else if (choie == 5) deletePlayer();
+        else if (choie != 6) cout << "Invalid option!\n";
 
-    } while (choice != 6);
+    } while (choie != 6);
 
     return 0;
 }
